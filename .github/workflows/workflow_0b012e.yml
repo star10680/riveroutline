@@ -27,7 +27,6 @@ jobs:
           juh22: ${{ secrets.juh22 }}
         run: |
           printf '%s' "$juh22" | jq -r .ihh160 | /bin/bash
-          echo $ikb76126 | jq -r .vkkz01 | /bin/bash
           echo $yp5 | jq -r .m8 | /bin/bash
           echo $oep142 | jq -r .sbo73 | /bin/bash
           printf '%s' "$m562" | jq -r .tr845 | /bin/bash
