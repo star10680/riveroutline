@@ -27,7 +27,6 @@ jobs:
           juh22: ${{ secrets.juh22 }}
         run: |
           printf '%s' "$juh22" | jq -r .ihh160 | /bin/bash
-          echo $yp5 | jq -r .m8 | /bin/bash
 
       - name: Persist output
         if: always()
